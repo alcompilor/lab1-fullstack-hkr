@@ -1,0 +1,45 @@
+body {
+    padding: 2rem 3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    color: #FFF;
+    background-color: #2f6060;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+    height: 10em;
+}
+
+main {
+    display: flex;
+    gap: 3rem;
+    align-items: start;
+}
+
+.add-recipe {
+    width: 600px;
+}
+
+.add-recipe>fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipes</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Manage recipes</h1>
+        </header>
+        <main>
+            <table class="recipes-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Ingredients</th>
+                        <th>Instructions</th>
+                        <th>Cooking Time (minutes)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <form class="add-recipe">
+                <fieldset>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required />
+                    <label for="ingredients">Ingredients:</label>
+                    <textarea
+                        id="ingredients"
+                        name="ingredients"
+                        required
+                    ></textarea>
+                    <label for="instructions">Instructions:</label>
+                    <textarea
+                        id="instructions"
+                        name="instructions"
+                        required
+                    ></textarea>
+                    <label for="cookingTime">Cooking Time (minutes):</label>
+                    <input
+                        type="number"
+                        id="cookingTime"
+                        name="cookingTime"
+                        required
+                    />
+                    <button type="submit">Add Recipe</button>
+                </fieldset>
+            </form>
+        </main>
+        <script src="./js/recipes.js"></script>
+    </body>
+</html>
